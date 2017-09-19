@@ -9,19 +9,19 @@ CND_DISTDIR=dist
 # Debug configuration
 CND_PLATFORM_Debug=GNU-Linux
 CND_ARTIFACT_DIR_Debug=dist/Debug/GNU-Linux
-CND_ARTIFACT_NAME_Debug=librtypes.a
-CND_ARTIFACT_PATH_Debug=dist/Debug/GNU-Linux/librtypes.a
+CND_ARTIFACT_NAME_Debug=libtrunk.a
+CND_ARTIFACT_PATH_Debug=dist/Debug/GNU-Linux/libtrunk.a
 CND_PACKAGE_DIR_Debug=dist/Debug/GNU-Linux/package
-CND_PACKAGE_NAME_Debug=rtypes.tar
-CND_PACKAGE_PATH_Debug=dist/Debug/GNU-Linux/package/rtypes.tar
+CND_PACKAGE_NAME_Debug=trunk.tar
+CND_PACKAGE_PATH_Debug=dist/Debug/GNU-Linux/package/trunk.tar
 # Release configuration
 CND_PLATFORM_Release=GNU-Linux
 CND_ARTIFACT_DIR_Release=dist/Release/GNU-Linux
-CND_ARTIFACT_NAME_Release=librtypes.a
-CND_ARTIFACT_PATH_Release=dist/Release/GNU-Linux/librtypes.a
+CND_ARTIFACT_NAME_Release=libtrunk.a
+CND_ARTIFACT_PATH_Release=dist/Release/GNU-Linux/libtrunk.a
 CND_PACKAGE_DIR_Release=dist/Release/GNU-Linux/package
-CND_PACKAGE_NAME_Release=rtypes.tar
-CND_PACKAGE_PATH_Release=dist/Release/GNU-Linux/package/rtypes.tar
+CND_PACKAGE_NAME_Release=trunk.tar
+CND_PACKAGE_PATH_Release=dist/Release/GNU-Linux/package/trunk.tar
 #
 # include compiler specific variables
 #

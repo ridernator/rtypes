@@ -6,9 +6,7 @@
                    projectFiles="true">
       <logicalFolder name="f1" displayName="Threading" projectFiles="true">
         <itemPath>include/Semaphore.h</itemPath>
-        <itemPath>include/Task.h</itemPath>
         <itemPath>include/Thread.h</itemPath>
-        <itemPath>include/ThreadPool.h</itemPath>
       </logicalFolder>
     </logicalFolder>
     <logicalFolder name="ResourceFiles"
@@ -20,9 +18,7 @@
                    projectFiles="true">
       <logicalFolder name="f1" displayName="Threading" projectFiles="true">
         <itemPath>src/Semaphore.cpp</itemPath>
-        <itemPath>src/Task.cpp</itemPath>
         <itemPath>src/Thread.cpp</itemPath>
-        <itemPath>src/ThreadPool.cpp</itemPath>
       </logicalFolder>
     </logicalFolder>
     <logicalFolder name="TestFiles"
@@ -59,19 +55,11 @@
       </compileType>
       <item path="include/Semaphore.h" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="include/Task.h" ex="false" tool="3" flavor2="0">
-      </item>
       <item path="include/Thread.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="include/ThreadPool.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="src/Semaphore.cpp" ex="false" tool="1" flavor2="0">
       </item>
-      <item path="src/Task.cpp" ex="false" tool="1" flavor2="0">
-      </item>
       <item path="src/Thread.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="src/ThreadPool.cpp" ex="false" tool="1" flavor2="0">
       </item>
     </conf>
     <conf name="Release" type="3">
@@ -104,19 +92,11 @@
       </compileType>
       <item path="include/Semaphore.h" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="include/Task.h" ex="false" tool="3" flavor2="0">
-      </item>
       <item path="include/Thread.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="include/ThreadPool.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="src/Semaphore.cpp" ex="false" tool="1" flavor2="0">
       </item>
-      <item path="src/Task.cpp" ex="false" tool="1" flavor2="0">
-      </item>
       <item path="src/Thread.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="src/ThreadPool.cpp" ex="false" tool="1" flavor2="0">
       </item>
     </conf>
   </confs>

@@ -1,6 +1,6 @@
 #pragma once
 
-#include <thread>
+#include <pthread.h>
 
 namespace rtypes {
 
@@ -9,12 +9,14 @@ namespace rtypes {
         virtual ~Thread();
 
         void start();
+        
+        bool detach();
 
         bool join();
-
-    private:
-        virtual void run() = 0;
         
-        std::thread thread;
+        virtual void run() = 0;
+
+    private:        
+        pthread_t thread;
     };
 }
