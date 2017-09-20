@@ -8,15 +8,13 @@ namespace rtypes {
     public:
         virtual ~Thread();
 
-        void start();
-        
-        bool detach();
+        bool start(const bool detached = false);
 
         bool join();
-        
-        virtual void run() = 0;
 
-    private:        
+        virtual void run() = 0;
+    private:
         pthread_t thread;
+        pthread_mutex_t mutex;
     };
 }

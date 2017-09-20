@@ -1,30 +1,24 @@
-#include <mutex>
-
 #include "Semaphore.h"
 
 namespace rtypes {
 
-    Semaphore::Semaphore() : count(1) {
-
-    }
-
-    Semaphore::Semaphore(const uint32_t initialCount) : count(initialCount) {
+    Semaphore::Semaphore(const uint32_t initialCount) : currentCount(initialCount) {
     }
 
     void Semaphore::enter() {
-        if (count <= 1) {
-            mutex.lock();
+        if (currentCount <= 1) {
+            pthread_mutex_lock(&mutex);
         }
 
-        --count;
+        --currentCount;
     }
 
     void Semaphore::leave() {
-        ++count;
-        mutex.unlock();
+        ++currentCount;
+        pthread_mutex_unlock(&mutex);
     }
-    
+
     uint32_t Semaphore::getCurrentCount() {
-        return count;
+        return currentCount;
     }
 }

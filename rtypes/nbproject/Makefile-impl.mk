@@ -24,7 +24,7 @@ CLEAN_SUBPROJECTS=${CLEAN_SUBPROJECTS_${SUBPROJECTS}}
 
 
 # Project Name
-PROJECTNAME=trunk
+PROJECTNAME=rtypes
 
 # Active Configuration
 DEFAULTCONF=Debug
