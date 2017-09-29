@@ -1,6 +1,6 @@
 #pragma once
 
-#include <pthread.h>
+#include "Mutex.h"
 
 #include <stdint.h>
 
@@ -17,6 +17,6 @@ namespace rtypes {
         uint32_t getCurrentCount();
     private:
         volatile uint32_t currentCount;
-        pthread_mutex_t mutex;
+        Mutex mutex;
     };
 }

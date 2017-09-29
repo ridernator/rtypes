@@ -36,6 +36,7 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 # Object Files
 OBJECTFILES= \
 	${OBJECTDIR}/src/Mutex.o \
+	${OBJECTDIR}/src/PeriodicCaller.o \
 	${OBJECTDIR}/src/Semaphore.o \
 	${OBJECTDIR}/src/Thread.o
 
@@ -70,6 +71,11 @@ ${OBJECTDIR}/src/Mutex.o: src/Mutex.cpp
 	${MKDIR} -p ${OBJECTDIR}/src
 	${RM} "$@.d"
 	$(COMPILE.cc) -g -Wall -Iinclude -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/src/Mutex.o src/Mutex.cpp
+
+${OBJECTDIR}/src/PeriodicCaller.o: src/PeriodicCaller.cpp
+	${MKDIR} -p ${OBJECTDIR}/src
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -Wall -Iinclude -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/src/PeriodicCaller.o src/PeriodicCaller.cpp
 
 ${OBJECTDIR}/src/Semaphore.o: src/Semaphore.cpp
 	${MKDIR} -p ${OBJECTDIR}/src

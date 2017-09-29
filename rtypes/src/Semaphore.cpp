@@ -7,7 +7,7 @@ namespace rtypes {
 
     void Semaphore::enter() {
         if (currentCount <= 1) {
-            pthread_mutex_lock(&mutex);
+            mutex.lock();
         }
 
         --currentCount;
@@ -15,7 +15,8 @@ namespace rtypes {
 
     void Semaphore::leave() {
         ++currentCount;
-        pthread_mutex_unlock(&mutex);
+        
+        mutex.unlock();
     }
 
     uint32_t Semaphore::getCurrentCount() {
